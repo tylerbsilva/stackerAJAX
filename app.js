@@ -125,7 +125,6 @@ var getInspired = function(tags) {
 
     var searchResults = showSearchResults(tags, result.items.length);
     $('.search-results').html(searchResults);
-    
     $.each(result.items, function(i, item) {
       var answerer = showAnswerer(item);
       $('.results').append(answerer);
